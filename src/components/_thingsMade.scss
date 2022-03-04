@@ -1,0 +1,123 @@
+#thingsMade {
+    padding:  0 7%;
+    @include respond(base) {
+    grid-area: thingsMade;
+    display: flex;
+    flex-direction: column;
+    padding:  0 7%;
+    text-align: center;
+    }
+    @include respond(tab-port) {
+      flex-direction:row;
+      flex-wrap: wrap;
+      align-content: center;
+    }
+    @include respond(tab-land) {
+        padding:  3% 7%;
+    }
+}
+
+.thingsMade-title:first-child {
+    width: 100%;
+  }
+.thingsMade-title:not(:first-child) {
+    flex: 1;
+  }
+
+.thingsMade-title {
+    font-size: 3.9rem;
+    color:$color-primary;
+    letter-spacing: -0.1rem;
+    margin: 8% 0;
+    text-align: center;
+    @include respond(base) {
+    font-size: 3.9rem;
+    color:$color-primary;
+    letter-spacing: -0.1rem;
+    margin: 8% 0;
+}
+    @include respond(phone) {
+      font-size: 4.2rem;
+      margin: 8% 0;
+    }
+    @include respond(tab-port) {
+    display: flex;
+      font-size: 6rem;
+      margin: 3%;
+      padding-left: 7%
+    }
+    @include respond(big-desktop) {
+        font-size: 9rem;
+        margin-top: 10%;
+    }
+}
+.thingsMade-text {
+    color: $color-light;
+    font-size: 2rem;
+    margin-top: 5%;
+    @include respond(tab-port) {
+    display: flex;
+      font-size: 2.5rem;
+      flex-direction: column;
+      padding-left: 7%;
+      width: 45%;
+      text-align: left;
+    }
+    @include respond(tab-land) {
+        font-size: 3.2rem;
+    }
+}
+.thingsMade-link {
+    color: $color-primary;
+    font-size: 1.7rem;
+    @include respond(tab-port) {
+         margin-top: 0;
+         margin-top: 1.5rem;
+         font-size: 2rem;
+         text-align: right;
+    }
+}
+.thingsMade-images {
+ height: 100%;
+ position: relative;
+ width: 100%;
+ margin: auto;
+ @include respond(tab-port) {
+    display: flex;
+    width: 55%;
+ }
+ @include respond(tab-land) {
+
+ }
+ @include respond(big-desktop) {
+    width: 35%;
+}
+}
+
+.thingsMade-images--container {
+    width: 100%;
+    height: 100%;
+    // background-color: red;
+}
+.thingsMade-img-rigth{
+    @include circles-style;
+    background-image: url(../../public/img/things-made-2.jpg);
+    left: 2%;
+    @include respond(tab-port) {
+        left: 8%;
+    }
+    @include respond(tab-land) {
+        left: 13%;
+    }
+}
+.thingsMade-img-left{
+    @include circles-style;
+    background-image: url(../../public/img/things-made-1.jpg);
+    right: 2%;
+    @include respond(tab-port) {
+        right: 8%;
+    }
+    @include respond(tab-land) {
+        right: 13%;
+    }
+}

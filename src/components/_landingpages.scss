@@ -1,0 +1,92 @@
+.landing-page-wrapper{
+    display: grid;
+    grid-template: 10vh 16vh 80vh 95vh 10vh / 1fr;
+    grid-template-areas: 
+    "header"
+    "title"
+    "land-content"
+    "footer"
+    ;   
+    justify-content: center; 
+    @include respond(base){
+    grid-template: 10vh 16vh 80vh 85vh 10vh / 1fr;
+    grid-template-areas: 
+    "header"
+    "title"
+    "land-content"
+    "footer"
+    ; 
+    }
+    @include respond(phone){
+    grid-template: 10vh 16vh 80vh 55vh 10vh / 1fr;
+    grid-template-areas: 
+    "header"
+    "title"
+    "land-content"
+    "footer"
+    ; 
+    }
+    @include respond(tab-port){
+    grid-template: 10vh 15vh 80vh 39vh 10vh / 1fr;
+    grid-template-areas: 
+    "header"
+    "title"
+    "landing-content"
+    "footer"
+    ; 
+    }
+    @include respond(tab-land){
+        grid-template: 10vh 20vh 80vh 10vh / repeat(12, 1fr);
+        grid-template-areas: 
+        "header header header header header header header header header header header header"
+        "title title title title title title title title title title title title"
+        "landing-content landing-content landing-content landing-content landing-content landing-content landing-content landing-content landing-content landing-content landing-content landing-content"       
+        "footer footer footer footer footer footer footer footer footer footer footer footer"
+    ; 
+    }
+ }
+
+
+.title{
+    grid-area: title;   
+    @include centering-titles-mobile;
+}
+
+
+.content-email {
+    text-align: center;
+    font-size: 3.5rem;
+    @include respond(tab-port){
+        font-size: 6rem;
+    }
+    @include respond(tab-land){
+        text-align: left;
+    }
+}
+.content-box-text {
+    width: 100%;  
+    background-color: $color-invisible-gray;  
+    text-align: center;
+    padding: .2rem 2rem;
+    margin-top: 1rem;
+    @include respond(tab-port){
+        height: 25vh;
+    }
+    @include respond(tab-land){
+        height: 27vh;
+        text-align: left;
+    }
+}
+.content-text-contact {
+    span {
+        color: $color-primary;
+    }
+    padding: 1rem 0;
+    @include respond(tab-port){
+        font-size: 3.1rem;
+        margin-top: 5%;
+    }
+    @include respond(tab-land) {
+        margin-top: 2%;
+    }
+}

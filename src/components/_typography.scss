@@ -1,0 +1,125 @@
+
+#intro {
+    grid-area: intro;
+    display: flex;
+    justify-content: center;
+    line-height: 3.2rem;
+    padding: 0 9%;    
+}
+.mainBox {
+    height: 85vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #D2E603, #3E978B);
+    padding: 10px;
+    @include respond(tab-port) {
+        width: 90%;
+    }
+    
+}
+.mainBox-inside {
+    background-color: $color-dark;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    padding: 0 7%;
+    @include respond(tab-port) {
+        padding: 0 8%;
+    }
+    @include respond(tab-land) {
+        padding: 0 7%;
+    }
+}
+.mainBox-note {    
+    color:$color-invisible-gray;    
+    font-family: kalam;
+    font-size: 1.8rem;
+    padding: 10px 0;
+}
+.mainBox-intro {    
+    font-weight: 400;
+    color:$color-light;  
+    font-size: 2rem;  
+    @include respond(phone) {
+        font-size: 2.7rem;
+        line-height: 3.5rem;
+    }
+    @include respond(tab-port) {
+        font-size: 3rem;
+        line-height: 4.5rem;  
+    }
+    @include respond(tab-land) {
+        font-size: 4rem;
+        line-height: 5rem; 
+    }
+    @include respond(big-desktop) {
+        font-size: 5.5rem;
+        line-height: 7.5rem;   
+    }
+    span {
+        color: $color-primary;
+        font-weight: 800;
+        font-size: 3.1rem;
+        letter-spacing: -.2rem;              
+        @include respond(phone) {
+            font-size: 3.9rem;            
+        }
+        @include respond(tab-port) {
+            font-size: 5rem;
+        }
+        @include respond(tab-land) {
+            font-size: 6rem;
+        }
+        @include respond(big-desktop) {
+            font-size: 8.2rem;
+            
+        }
+    }
+}
+.mainBox-down {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 10%;
+    @include respond(tab-port) {
+        padding-top: 4%;
+    }
+    @include respond(big-desktop) {
+        padding-top: 8%;
+        padding-right: 2%;
+    }
+}
+
+.mainBox-botton {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    @include respond(tab-port) {
+        height: 9rem;
+        width: 9rem;
+    }
+    .mainBox-boton-text {
+      animation: rotation 30s infinite linear;
+      height: 13rem;
+      width: 13rem;
+      justify-content: center;
+      font-size: 3rem;
+      letter-spacing: 0;
+      @include respond(tab-port) {
+        font-size: 1.5rem;
+        height: 15rem;
+        width: 15rem;
+      }
+    }
+
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

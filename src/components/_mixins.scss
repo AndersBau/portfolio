@@ -1,0 +1,144 @@
+@mixin circles-style {
+    width: 19rem;
+    height: 19rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    border: .7rem solid $color-invisible-gray;
+    background-size: cover;
+    @include respond(tab-port) {
+        width: 24rem;
+       height: 23rem;
+    }
+    @include respond(tab-land) {
+        width: 29rem;
+       height: 29rem;
+    }
+    @include respond(big-desktop) {
+        width: 36rem;
+       height: 36rem;
+    }
+ }
+
+ @mixin centering-titles-mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include respond(tab-land) {
+        align-items: flex-start;
+    }
+}
+
+@mixin  titlesPages {
+    font-size: 3rem;
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+    @include respond(tab-land) {
+        font-size: 4rem;
+    }
+    @include respond(big-desktop) {
+        font-size: 4.3rem;
+    }
+
+}
+
+@mixin pictureSize {
+    margin-top: 1rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-image: url(../../public/img/img-me.png);
+    background-color: $color-light-gray;
+    background-position: 120% 0%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    border: solid 3px $color-ligther-gray;
+    @include respond(tab-port) {
+        width: 23rem;
+        height: 23rem;
+        border-radius: 50%;
+    }
+    @include respond(big-desktop) {
+        width: 26rem;
+        height: 26rem;
+        border-radius: 50%;
+    }
+}
+
+@mixin headersRigth {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    border-left: solid 3px $color-invisible-gray;
+    background-size: cover;
+    width: 60%;
+    background-position: 50% 50% ;
+    padding-left: 2%;
+}
+
+@mixin  headersLeft {
+    height: 100%;
+    background-size: cover;
+    background-position: 45% 50%;
+    width: 40%;
+}
+
+@mixin  bg-work {
+    background-size: 65%;
+    @include respond(base) {
+    background-size: 65%;
+    }
+    background-position: center;
+    @include respond(tab-port) {
+        background-size: 75%;
+    }
+
+}
+
+// Media Query Manager
+/*
+0   - 600px:  Phone
+600 - 900px:  Tablet Portrait
+900 - 1200px: Tabled Landscape
+
+1800px + :    Big Screens
+
+ORDER Base + typography > general layout + grid > page > components
+
+*/
+
+/*
+ CLASSIC WAY FROM DESKTOP TO MOBILE
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+MOBILE FIRST
+ - allscreens
+ - phone
+ - tab-port
+
+*/
+
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == base {
+        @media (min-width: 321px) { @content };
+    }
+    @if $breakpoint == phone {
+        @media (min-width: 375px) { @content };
+    }
+    @if $breakpoint == tab-port {
+        @media (min-width: 600px) { @content };
+    }
+    @if $breakpoint == tab-land {
+        @media (min-width: 1024px) { @content };
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 1700px) { @content };
+    }
+}

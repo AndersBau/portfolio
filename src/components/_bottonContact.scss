@@ -1,0 +1,51 @@
+#bottonContact {
+  grid-area: bottonContact;
+ }
+.bottonContact-container {
+    height: 100%;
+    clip-path: polygon(0 7%, 100% 2%, 100% 97%, 0 90%);
+    background-color: $color-darker-gray;
+    color: $color-ligther-gray;
+    font-size: 2.2rem;
+    padding: 14% 7%;
+    @include respond(base) {
+      padding: 12% 7%;
+    }
+    
+    @include respond(phone) {
+      font-size: 2.2rem;
+      // padding: 15% 7% 0 7%;
+      }
+    @include respond(tab-port) {
+    font-size: 2.4rem;
+    padding: 9% 7% 0 7%;
+    }
+    @include respond(tab-land) {
+      text-align: center;
+      padding: 4% 7% 0 7%;
+    }
+    @include respond(big-desktop) {
+      font-size: 3rem;
+      text-align: center;
+      padding: 6% 7% 0 7%;
+    }
+}
+.bottonContact-text {
+  letter-spacing: 0;  
+  @include respond(big-desktop) {
+    
+  }
+  span {
+      color: $color-primary;
+  }
+}
+.bottonContact-link {
+  color: $color-primary;
+  font-size: 2.2rem;
+  &:hover {
+    color:$color-dark;
+  }
+}
+
+
+

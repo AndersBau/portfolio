@@ -1,0 +1,196 @@
+.work-page-wrapper{
+    display: grid;
+    grid-template: 10vh 18vh 220vh 70vh 10vh / 1fr;
+    grid-template-areas:
+    "header"
+    "title-work"
+    "content-work"
+    "bottonContact"
+    "footer"
+    ;
+    justify-content: center;
+    @include respond(base) {
+        grid-template: 10vh 14vh 220vh 55vh 10vh / 1fr;
+        grid-template-areas:
+        "header"
+        "title-work"
+        "content-work"
+        "bottonContact"
+        "footer"
+        ;
+        }
+    @include respond(phone) {
+        grid-template: 10vh 13vh 220vh 52vh 10vh / 1fr;
+        grid-template-areas:
+        "header"
+        "title-work"
+        "content-work"
+        "bottonContact"
+        "footer"
+        ;
+        }
+    @include respond(tab-port) {
+        grid-template: 10vh 10vh 40vh 35vh 10vh / 1fr;
+        grid-template-areas:
+        "header"
+        "title-work"
+        "content-work"
+        "bottonContact"
+        "footer"
+        ;
+        }
+    @include respond(tab-land) {
+        grid-template: 10vh 15vh 70vh 40vh 10vh / 1fr;
+        grid-template-areas:
+        "header"
+        "title-work"
+        "content-work"
+        "bottonContact"
+        "footer"
+        ;
+        }
+}
+
+.title-work {
+    grid-area: title-work;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3rem;
+
+}
+.work-title-underline {
+    width: 60%;
+    height: .7rem;
+    background-image: linear-gradient(to right, #D2E603, #3E978B);
+}
+#content-work {
+    grid-area: content-work;
+    justify-content: center;
+    padding: 0 7%;
+
+    @include respond(tab-port) {
+        display: flex;
+        flex-direction: row;
+        // height: 50vh;
+    }
+    @include respond(tab-land) {
+        height: 60vh;
+    }
+}
+.work-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    color: $color-darker-gray;
+    // width: 75%;
+    @include respond(tab-port) {
+        flex-direction: row;
+        // height: 50vh;
+    }
+    @include respond(tab-land) {
+        width: 85vw;
+        height: 60vh;
+    }
+}
+
+.item {
+    // border: solid .3rem $color-primary-dark;
+    border-radius: 2rem;
+    background-repeat: no-repeat;
+    background-color: $color-light-gray;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin: 2%;
+
+    @include respond(base) {
+        font-size: 1.7rem;
+    }
+    @include respond(tab-port) {
+    height: 35vh;
+    text-align: center;
+    font-size: 1.1rem;
+    }
+    @include respond(tab-land) {
+        height: 55vh;
+        font-size: 1.6rem;
+        }
+}
+
+.bgushome {
+    background-image: url(../../public/img/project-ushome-images/final-3.png);
+    @include bg-work;
+}
+
+.bgmegafruver {
+    background-image: url(../../public/img/project-megafruver-images/final-1.png);
+    @include bg-work;
+    }
+
+.bgwoodsidevision {
+    background-image: url(../../public/img/project-woodsidevision-images/final-1.png);
+    @include bg-work;
+}
+
+.bgjtportfolio {
+    background-image: url(../../public/img/final-1.png);
+    @include bg-work;
+    }
+.item-top-text, .item-middle-text, .item-bottom-text {
+  height: 20%;
+  width: 90%;
+  padding-top: 1%;
+  @include respond(base) {
+
+    }
+    @include respond(tab-port) {
+
+    }
+}
+
+.item-top-text {
+    font-size: 1.3rem;
+    @include respond(tab-land) {
+        font-size: 1.2rem;
+        @include respond(tab-port) {
+            font-size: 1.2rem;
+        }
+        @include respond(tab-land) {
+            font-size: 1.2rem;
+        }
+    }
+}
+.item-middle-text {
+    font-size: 1.5rem;
+    @include respond(tab-port) {
+        font-size: 1.2rem;
+    }
+    @include respond(tab-land) {
+        font-size: 1.5rem;
+    }
+}
+.item-middle-text h2{
+
+    @include respond(tab-port) {
+        font-size: 1.5rem;
+    }
+    @include respond(tab-land) {
+        font-size: 2.4rem;
+    }
+}
+
+
+.item-bottom-text p a {
+    color: $color-primary-dark;
+    font-size: 1.5rem;
+}
+.item-bottom-text p a:hover {
+    color: $color-dark;
+    cursor: pointer;
+}

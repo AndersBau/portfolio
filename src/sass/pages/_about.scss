@@ -11,7 +11,7 @@
     ;
     justify-content: center;
     @include respond(base) {
-        grid-template: 10vh 15vh 35vh 350vh 60vh 10vh / 1fr;
+        grid-template: 10vh 15vh 26vh 350vh 60vh 10vh / 1fr;
         grid-template-areas:
         "header"
         "title"
@@ -89,7 +89,6 @@
 }
 .picture {
     grid-area: picture;
-
 }
 
 .picture-container {

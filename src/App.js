@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/Navabar';
 import Routes from './routes'
 import './App.css';
-import './components/main.scss'
+import './sass/main.scss'
 
 
 function App() {

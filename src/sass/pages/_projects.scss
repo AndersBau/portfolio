@@ -113,30 +113,30 @@
 .header-ushome-imageRigth {
     @include headersRigth;
     background-image: linear-gradient(to right, rgba(46, 196, 172, .8),
-    rgba(46, 196, 172, .8)), url(../../public/img/project-ushome-images/final-2.png);
+    rgba(46, 196, 172, .8)), url(../../../public/img/project-ushome-images/final-2.png);
 }
 .header-ushome-imageLeft {
     @include headersLeft;
-    background-image: url(../../public/img/project-ushome-images/final-1.png);
+    background-image: url(../../../public/img/project-ushome-images/final-1.png);
 }
 
 
 .header-megafruver-imageRigth {
     @include headersRigth;
-    background-image: linear-gradient(to right, rgba(75, 151, 39, 0.8), rgba(94, 143, 38, 0.8)), url(../../public/img/project-megafruver-images/headerRigth-megafruver.png);
+    background-image: linear-gradient(to right, rgba(75, 151, 39, 0.8), rgba(94, 143, 38, 0.8)), url(../../../public/img/project-megafruver-images/headerRigth-megafruver.png);
 }
 .header-megafruver-imageLeft {
     @include headersLeft;
-    background-image: url(../../public/img/project-megafruver-images/headerLeft-megafruver.png);
+    background-image: url(../../../public/img/project-megafruver-images/headerLeft-megafruver.png);
 }
 
 .header-woodsidevision-imageRigth {
     @include headersRigth;
-    background-image: linear-gradient(to right, rgba(36, 44, 32, 0.8), rgba(46, 51, 41, 0.8)), url(../../public/img/project-woodsidevision-images/headerRigth-woodsidevision.png);
+    background-image: linear-gradient(to right, rgba(36, 44, 32, 0.8), rgba(46, 51, 41, 0.8)), url(../../../public/img/project-woodsidevision-images/headerRigth-woodsidevision.png);
 }
 .header-woodsidevision-imageLeft {
     @include headersLeft;
-    background-image: url(../../public/img/project-woodsidevision-images/headerLeft-woodsidevision.png);
+    background-image: url(../../../public/img/project-woodsidevision-images/headerLeft-woodsidevision.png);
 }
 
 .header-jtportfolio-imageRigth {
@@ -145,7 +145,7 @@
 }
 .header-jtportfolio-imageLeft {
     @include headersLeft;
-    background-image: url(../../public/img/project-jtportfolio-images/bg-work.png);
+    background-image: url(../../../public/img/project-jtportfolio-images/bg-work.png);
 }
 
 // end headers for all projects

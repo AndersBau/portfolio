@@ -6,7 +6,6 @@ const Home = () => {
     <section id="intro">
       <div className="mainBox gradient">
         <div className="mainBox-inside">
-            <p className="mainBox-note"> const greeting = ()</p>
 
                 <h2 className="mainBox-intro">
                     Hi, thanks for visiting my site! <br/>
@@ -15,8 +14,6 @@ const Home = () => {
                     based <br/>
                     in New York City.
                 </h2>
-
-                <p className="mainBox-note">closing braket</p>
             <div className="mainBox-down">
                 <div className="mainBox-botton">
                     <a href="/work">

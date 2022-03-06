@@ -101,7 +101,7 @@
 }
 .thingsMade-img-rigth{
     @include circles-style;
-    background-image: url(../../public/img/things-made-2.jpg);
+    background-image: url(../../../public/img/things-made-2.jpg);
     left: 2%;
     @include respond(tab-port) {
         left: 8%;
@@ -112,7 +112,7 @@
 }
 .thingsMade-img-left{
     @include circles-style;
-    background-image: url(../../public/img/things-made-1.jpg);
+    background-image: url(../../../public/img/things-made-1.jpg);
     right: 2%;
     @include respond(tab-port) {
         right: 8%;

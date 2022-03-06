@@ -1,4 +1,5 @@
 import React from "react";
+import BottonContact from "./BottonContact";
 import WorkListHome from "./WorkListHome";
 const Home = () => {
   return (
@@ -46,7 +47,7 @@ const Home = () => {
             <h3 className="process-subtitles">Plan</h3>
 
             <div className="process-img">
-                <img src="img/plan.png" className="process-img-size"/>
+                <img src="img/plan.png" className="process-img-size" alt="Anderson process"/>
             </div>
 
             <p className="process-text">
@@ -65,7 +66,7 @@ const Home = () => {
             <h3 className="process-subtitles">Design</h3>
 
             <div className="process-img">
-                <img src="img/design.png" className="process-img-size"/>
+                <img src="img/design.png" className="process-img-size" alt="Anderson process"/>
             </div>
 
             <p className="process-text">
@@ -79,7 +80,7 @@ const Home = () => {
             <h3 className="process-subtitles">Develop</h3>
 
             <div className="process-img">
-                <img src="img/code.png" className="process-img-size"/>
+                <img src="img/code.png" className="process-img-size" alt="Anderson process"/>
             </div>
 
             <p className="process-text">
@@ -91,6 +92,7 @@ const Home = () => {
         </div>
     </div>
 </section>
+<BottonContact />
     </div>
   )
 }

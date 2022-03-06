@@ -82,7 +82,7 @@
     justify-content: flex-end;
     padding: 40% 10% 0 0;
     @include respond(tab-port) {
-        padding: 15% 10% 0 0;
+        padding: 5% 10% 0 0;
     }
     @include respond(big-desktop) {
         padding: 8% 5% 0 0;

@@ -1,4 +1,5 @@
 import React from "react";
+import BottonContact from "./BottonContact";
 
 const About = () => {
   return (
@@ -81,6 +82,7 @@ const About = () => {
         </div>
     </div>
     </section>
+    <BottonContact />
     </div>
   )
 }

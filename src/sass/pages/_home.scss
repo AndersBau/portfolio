@@ -1,6 +1,6 @@
 .home-page-wrapper{
         display: grid;
-        grid-template: 10vh 100vh 7vh 240vh 235vh 70vh 10vh / 1fr;
+        grid-template: 10vh 100vh 7vh 240vh 235vh 70vh/ 1fr;
         grid-template-areas:
         "header"
         "intro"
@@ -8,10 +8,9 @@
         "thingsMade"
         "process"
         "bottonContact"
-        "footer"
         ;
         @include respond(base) {
-            grid-template: 10vh 90vh 10vh 230vh 220vh 50vh 10vh / 1fr;
+            grid-template: 10vh 90vh 10vh 230vh 170vh 50vh/ 1fr;
             grid-template-areas:
             "header"
             "intro"
@@ -19,11 +18,10 @@
             "thingsMade"
             "process"
             "bottonContact"
-            "footer"
             ;
         }
     @include respond(phone) {
-        grid-template: 10vh 90vh 6vh 230vh 205vh 50vh 10vh / 1fr;
+        grid-template: 10vh 90vh 6vh 230vh 205vh 50vh/ 1fr;
         grid-template-areas:
         "header"
         "intro"
@@ -31,11 +29,10 @@
         "thingsMade"
         "process"
         "bottonContact"
-        "footer"
         ;
     }
     @include respond(tab-port)  {
-        grid-template: 10vh 90vh 6vh 60vh 60vh 40vh 10vh / 1fr;
+        grid-template: 10vh 90vh 6vh 60vh 60vh 40vh/ 1fr;
         grid-template-areas:
         "header"
         "intro"
@@ -43,11 +40,10 @@
         "thingsMade"
         "process"
         "bottonContact"
-        "footer"
         ;
     }
     @include respond(tab-land) {
-        grid-template: 10vh 95vh 7vh 70vh 95vh 40vh 10vh / 1fr;
+        grid-template: 10vh 95vh 7vh 70vh 95vh 40vh/ 1fr;
         grid-template-areas:
         "header"
         "intro"
@@ -55,11 +51,10 @@
         "thingsMade"
         "process"
         "bottonContact"
-        "footer"
         ;
     }
     @include respond(big-desktop) {
-        grid-template: 10vh 95vh 7vh 90vh 90vh 40vh 10vh / 1fr;
+        grid-template: 10vh 95vh 7vh 90vh 90vh 40vh/ 1fr;
         grid-template-areas:
         "header"
         "intro"
@@ -67,7 +62,6 @@
         "thingsMade"
         "process"
         "bottonContact"
-        "footer"
         ;
     }
 }

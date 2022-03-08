@@ -33,8 +33,8 @@ const About = () => {
           about user centered experiences.
         </p>
         <br />
-        <h3>My tech stack</h3>
-        <p>Proficient:</p>
+        <h3>Tech stack</h3>
+        <p>Proficient:</p><br/>
         <p className="content-list">
           JavaScript, React, Redux, HTML, CSS, git, Node, Express, PostgreSQL
         </p>
@@ -91,15 +91,12 @@ const About = () => {
         <p>Familiar</p>
         <p className="content-list">MongoDB, firebase, Mocha, Jasmin</p>
         <p className="content-text">
-          Most of the design is done in photoshop, Illustrator and for
-          prototyping I use figma.
+          Wireframe U/I and prototype tools.
         </p>
+        <p className="content-list">Photoshop, Figma</p>
         <div className="content-logos">
           <div className="content-logos-skills">
             <img src="/img/skills-5.png" alt="Anderson Bautista Skills" className="content-logo" />
-          </div>
-          <div className="content-logos-skills">
-            <img src="/img/skills-6.png" alt="Anderson Bautista Skills" className="content-logo" />
           </div>
           <div className="content-logos-skills">
             <img src="/img/skills-7.png" alt="Anderson Bautista Skills" className="content-logo" />

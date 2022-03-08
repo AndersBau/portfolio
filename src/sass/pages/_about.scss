@@ -84,13 +84,12 @@
 }
 .content-logos {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: auto;
     width: 100%;
     margin: 10% 0;
     @include respond(tab-port) {
         margin: 5% 0;
-        justify-content: flex-start;
     }
 }
 .content-logos-skills {

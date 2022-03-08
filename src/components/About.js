@@ -89,7 +89,7 @@ const About = () => {
           </div>
         </div>
         <p>Familiar</p>
-        <p className="content-list">MongoDB, firebase, Mocha, Jasmin</p>
+        <p className="content-list">MongoDB, firebase, Mocha, Jasmin</p><br />
         <p className="content-text">
           Wireframe U/I and prototype tools.
         </p>

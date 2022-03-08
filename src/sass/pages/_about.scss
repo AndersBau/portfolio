@@ -1,79 +1,27 @@
 .about-page-wrapper{
-    // display: grid;
-    grid-template-rows: 10vh 11vh 23vh 270vh 50vh 10vh;
+    display: grid;
+    grid-template-rows: 12vh;
     grid-template-columns: 1fr;
-    // grid-template-areas:
-    // "header"
-    // "title"
-    // "picture"
-    // "content"
-    // "bottonContact"
-    // "footer"
-    // ;
     justify-content: center;
-    @include respond(base) {
-        // grid-template-areas:
-        // "header"
-        // "title"
-        // "picture"
-        // "content"
-        // "bottonContact"
-        // "footer"
-        // ;
-    }
-    @include respond(phone) {
-
-        // grid-template-areas:
-        // "header"
-        // "title"
-        // "picture"
-        // "content"
-        // "bottonContact"
-        // "footer"
-        // ;
-    }
     @include respond(tab-port) {
-
-        // grid-template-areas:
-        // "header"
-        // "title"
-        // "picture"
-        // "content"
-        // "bottonContact"
-        // "footer"
-        // ;
+        grid-template-rows: 12vh;
     }
     @include respond(tab-land) {
-        display: grid;
-        grid-template: 10vh 20vh 22vh 160vh 45vh 10vh / repeat(12, 1fr);
-        grid-template-areas:
-        "header header header header header header header header header header header header"
-        ". . . . title title title title title title title ."
-        "picture picture picture picture content content content content content content content ."
-        ". . . .content content content content content content content ."
-        "bottonContact bottonContact bottonContact bottonContact bottonContact bottonContact bottonContact bottonContact bottonContact bottonContact bottonContact bottonContact"
-        "footer footer footer footer footer footer footer footer footer footer footer footer"
-        ;
+        grid-template-rows: 10vh 20vh 22vh 160vh 45vh;
+        grid-template-columns:repeat(12, 1fr);
     }
     @include respond(big-desktop) {
-        grid-template: 10vh 19vh 22vh 70vh 45vh 5vh / repeat(12, 1fr);
-        grid-template-areas:
-        "header header header header header header header header header header header header"
-        ". . . . title title title title title title title ."
-        "picture picture picture picture content content content content content content content ."
-        ". . . .content content content content content content content ."
-        "bottonContact bottonContact bottonContact bottonContact bottonContact bottonContact bottonContact bottonContact bottonContact bottonContact bottonContact bottonContact"
-        "footer footer footer footer footer footer footer footer footer footer footer footer"
-        ;
+        grid-template-rows: 10vh 20vh 22vh 120vh 45vh;
     }
 }
 
 .title{
-    grid-row: title-s / title-e;
+    grid-row: 2 / 3;
     @include centering-titles-mobile;
     @include titlesPages;
     @include respond(tab-land) {
-        margin-top: 4rem;
+    margin-top: 4rem;
+    grid-column: 5 / 9;
     }
 }
 .title-text {
@@ -89,7 +37,10 @@
     }
 }
 .picture {
-    grid-row: picture-s / picture-e;
+    grid-row: 3 / span 1;
+    @include respond(tab-land) {
+        grid-column: 2 / span 3;
+    }
 }
 
 .picture-container {
@@ -101,12 +52,14 @@
     @include pictureSize;
 }
 .content {
-    grid-area: content;
+    grid-row: 4 / span 1;
     color: $color-light;
     font-size: 2.4rem;
     font-weight: 400;
     padding: 0 7%;
     @include respond(tab-land) {
+        grid-row: 3 / span 1;
+        grid-column: 5 / span 6;
         font-size: 2.4rem;
         padding: 0 7% 0 0;
     }
@@ -119,7 +72,7 @@
 .content-text {
     margin-top: 1rem;
     span {
-        color: $color-react-logo;
+        color: $color-primary;
     }
     @include respond(tab-land) {
       margin-top: 2.5rem;
@@ -152,6 +105,4 @@
         width: 100%;
     }
 }
-.bottonContact {
-    grid-area: bottonContact;
-}
+

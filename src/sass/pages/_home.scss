@@ -1,80 +1,31 @@
 .home-page-wrapper{
-        display: grid;
-        grid-template: 10vh 100vh 7vh 240vh 235vh 70vh/ 1fr;
-        grid-template-areas:
-        "header"
-        "intro"
-        "gradient-divider"
-        "thingsMade"
-        "process"
-        "bottonContact"
-        ;
-        @include respond(base) {
-            grid-template: 10vh 90vh 10vh 230vh 170vh 50vh/ 1fr;
-            grid-template-areas:
-            "header"
-            "intro"
-            "gradient-divider"
-            "thingsMade"
-            "process"
-            "bottonContact"
-            ;
-        }
+    display: grid;
+    grid-template-rows: 12vh;
+    // justify-content: center;
+    @include respond(tab-port) {
+    }
+
     @include respond(phone) {
-        grid-template: 10vh 90vh 6vh 230vh 205vh 50vh/ 1fr;
-        grid-template-areas:
-        "header"
-        "intro"
-        "gradient-divider"
-        "thingsMade"
-        "process"
-        "bottonContact"
-        ;
+
     }
     @include respond(tab-port)  {
-        grid-template: 10vh 90vh 6vh 60vh 60vh 40vh/ 1fr;
-        grid-template-areas:
-        "header"
-        "intro"
-        "gradient-divider"
-        "thingsMade"
-        "process"
-        "bottonContact"
-        ;
     }
     @include respond(tab-land) {
-        grid-template: 10vh 95vh 7vh 70vh 95vh 40vh/ 1fr;
-        grid-template-areas:
-        "header"
-        "intro"
-        "gradient-divider"
-        "thingsMade"
-        "process"
-        "bottonContact"
-        ;
+
     }
     @include respond(big-desktop) {
-        grid-template: 10vh 95vh 7vh 90vh 90vh 40vh/ 1fr;
-        grid-template-areas:
-        "header"
-        "intro"
-        "gradient-divider"
-        "thingsMade"
-        "process"
-        "bottonContact"
-        ;
     }
 }
 
-
 .gradient-divider{
-    grid-area: gradient-divider;
-    height: 7vh;
+    grid-row: 3 / 4;
+    height: 4vh;
     background-image: linear-gradient(to bottom, #D2E603, #3E978B);
     display: flex;
     justify-content: center;
     align-items: center;
     padding:  2%;
+    margin: 3rem 0 1rem 0;
 
 }
 .gradient-text {

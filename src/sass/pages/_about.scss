@@ -4,7 +4,6 @@
     grid-template-columns: 1fr;
     justify-content: center;
     @include respond(tab-port) {
-        grid-template-rows: 12vh;
     }
     @include respond(tab-land) {
         grid-template-rows: 10vh 20vh 22vh 160vh 45vh;
@@ -20,8 +19,8 @@
     @include centering-titles-mobile;
     @include titlesPages;
     @include respond(tab-land) {
-    margin-top: 4rem;
-    grid-column: 5 / 9;
+      grid-column: 5 / 9;
+      margin-top: 4rem;
     }
 }
 .title-text {

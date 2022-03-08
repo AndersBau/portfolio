@@ -1,6 +1,6 @@
 
 #intro {
-    grid-area: intro;
+    grid-row: 2 /3;
     display: flex;
     justify-content: center;
     line-height: 3.2rem;
@@ -17,14 +17,14 @@
 
 }
 .mainBox-inside {
-    background-color: $color-dark;
-    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color: $color-dark;
+    height: 100%;
     padding: 0 7%;
     @include respond(tab-port) {
-        padding: 0 8%;
+        padding: 11% 8% 0 8%;
     }
     @include respond(tab-land) {
         padding-top: 7%;
@@ -37,6 +37,7 @@
     padding: 10px 0;
 }
 .mainBox-intro {
+    justify-content: center;
     font-weight: 400;
     color:$color-light;
     font-size: 3rem;

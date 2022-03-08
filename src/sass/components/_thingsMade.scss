@@ -1,28 +1,30 @@
 #thingsMade {
-    padding:  0 7%;
+    grid-row: 4/ 5;
+    // padding:  0 2%;
+    align-items: center;
     @include respond(base) {
-    grid-area: thingsMade;
-    display: flex;
-    flex-direction: column;
-    padding:  0 7%;
-    text-align: center;
+    // grid-area: thingsMade;
+    // display: flex;
+    // flex-direction: column;
+    // padding:  0 7%;
+    // text-align: center;
     }
     @include respond(tab-port) {
-      flex-direction:row;
-      flex-wrap: wrap;
-      align-content: center;
+    //   flex-direction:row;
+    //   flex-wrap: wrap;
+    //   align-content: center;
     }
     @include respond(tab-land) {
-        padding:  3% 7%;
+        // padding:  3% 7%;
     }
 }
 
-.thingsMade-title:first-child {
-    width: 100%;
-  }
-.thingsMade-title:not(:first-child) {
-    flex: 1;
-  }
+// .thingsMade-title:first-child {
+//     width: 100%;
+//   }
+// .thingsMade-title:not(:first-child) {
+//     flex: 1;
+//   }
 
 .thingsMade-title {
     font-size: 3.9rem;
@@ -48,7 +50,7 @@
     }
     @include respond(big-desktop) {
         font-size: 9rem;
-        margin-top: 10%;
+        margin-top: 4%;
     }
 }
 .thingsMade-text {

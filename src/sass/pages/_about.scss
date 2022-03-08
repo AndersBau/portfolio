@@ -1,50 +1,51 @@
 .about-page-wrapper{
-    display: grid;
-    grid-template: 10vh 15vh 37vh 360vh 80vh 10vh / 1fr;
-    grid-template-areas:
-    "header"
-    "title"
-    "picture"
-    "content"
-    "bottonContact"
-    "footer"
-    ;
+    // display: grid;
+    grid-template-rows: 10vh 11vh 23vh 270vh 50vh 10vh;
+    grid-template-columns: 1fr;
+    // grid-template-areas:
+    // "header"
+    // "title"
+    // "picture"
+    // "content"
+    // "bottonContact"
+    // "footer"
+    // ;
     justify-content: center;
     @include respond(base) {
-        grid-template: 10vh 15vh 26vh 350vh 60vh 10vh / 1fr;
-        grid-template-areas:
-        "header"
-        "title"
-        "picture"
-        "content"
-        "bottonContact"
-        "footer"
-        ;
+        // grid-template-areas:
+        // "header"
+        // "title"
+        // "picture"
+        // "content"
+        // "bottonContact"
+        // "footer"
+        // ;
     }
     @include respond(phone) {
-        grid-template: 10vh 13vh 26vh 320vh 50vh 10vh / 1fr;
-        grid-template-areas:
-        "header"
-        "title"
-        "picture"
-        "content"
-        "bottonContact"
-        "footer"
-        ;
+
+        // grid-template-areas:
+        // "header"
+        // "title"
+        // "picture"
+        // "content"
+        // "bottonContact"
+        // "footer"
+        // ;
     }
     @include respond(tab-port) {
-        grid-template: 10vh 13vh 24vh 120vh 40vh 10vh / 1fr;
-        grid-template-areas:
-        "header"
-        "title"
-        "picture"
-        "content"
-        "bottonContact"
-        "footer"
-        ;
+
+        // grid-template-areas:
+        // "header"
+        // "title"
+        // "picture"
+        // "content"
+        // "bottonContact"
+        // "footer"
+        // ;
     }
     @include respond(tab-land) {
-        grid-template: 10vh 20vh 22vh 150vh 45vh 10vh / repeat(12, 1fr);
+        display: grid;
+        grid-template: 10vh 20vh 22vh 160vh 45vh 10vh / repeat(12, 1fr);
         grid-template-areas:
         "header header header header header header header header header header header header"
         ". . . . title title title title title title title ."
@@ -68,7 +69,7 @@
 }
 
 .title{
-    grid-area: title;
+    grid-row: title-s / title-e;
     @include centering-titles-mobile;
     @include titlesPages;
     @include respond(tab-land) {
@@ -88,7 +89,7 @@
     }
 }
 .picture {
-    grid-area: picture;
+    grid-row: picture-s / picture-e;
 }
 
 .picture-container {
@@ -116,7 +117,7 @@
 
 }
 .content-text {
-    margin-top: 4rem;
+    margin-top: 1rem;
     span {
         color: $color-react-logo;
     }

@@ -8,9 +8,9 @@ const Home = () => {
         <div className="mainBox gradient">
           <div className="mainBox-inside">
             <h2 className="mainBox-intro">
-              Hi, thanks for visiting my site! <br />
+              Hi, thanks for comming to my site! <br />
               I’m <span>Anderson</span>
-              <br />a fullstack Web <span>Developer</span> <br />
+              <br />a fullstack <span>Developer</span> <br />
               based <br />
               in New York City.
             </h2>
@@ -28,9 +28,22 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div className="gradient-divider"></div>
+      <div className="middle_divider">
+          <div className="middle_divider-split">
+            <div className="middle_divider-phrase">
+              <p>I create websites</p>
+            </div>
+          </div>
+          <div className="middle_divider-split">
+            <div className="middle_divider-col">
+                <p className="middle-text">
+                A developer with experience working on teams following Agile development methodologies, utilizing modern web technologies.
+                </p>
+            </div>
+          </div>
+      </div>
       <section id="thingsMade">
-        <h2 className="thingsMade-title">Things I've made</h2>
+        <h2 className="thingsMade-title">Featured projects</h2>
         <WorkListHome />
       </section>
       <BottonContact />

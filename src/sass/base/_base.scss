@@ -1,5 +1,5 @@
 *,
-*::after, 
+*::after,
 *::before {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ a {
     text-decoration: none;
 }
 html{
-    font-size: 62.5%;  //defines what 1 rem is = 10px/16px = 62.5% 
+    font-size: 62.5%;  //defines what 1 rem is = 10px/16px = 62.5%
     @include respond(base) {
         // font-size: 62.5%;
     }
@@ -28,9 +28,10 @@ html{
 
 }
 body{
-    background-color: $color-dark;  
-    box-sizing: border-box;   
-    font-family: 'Manrope', sans-serif; 
-    font-weight: 400;  
-    color: $color-light-gray;   
+    background-color: $color-dark;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    letter-spacing: -.1rem;
+    color: $color-light-gray;
 }

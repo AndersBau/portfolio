@@ -47,7 +47,6 @@
     display: flex;
       font-size: 6rem;
       margin: 3%;
-      padding-left: 7%
     }
     @include respond(big-desktop) {
         font-size: 9rem;

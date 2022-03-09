@@ -42,21 +42,7 @@ const WorkListHome = () => {
         </div>
       </div>
 
-      <div className="item bgjtportfolio">
-        <div className="item-top-text">
-          <h2>Landing Pages</h2>
-          <p>Multiple samples of web design</p>
-        </div>
-        <div className="item-middle-text"></div>
-        <div className="item-bottom-text">
-          <p>Web Design</p>
-          <p>
-            <a href="https://dribbble.com/Andev11" target="_blank">
-              View on Dribbble
-            </a>
-          </p>
-        </div>
-      </div>
+
     </div>
   );
 };

@@ -26,7 +26,7 @@
     align-items: center;
     margin: 3rem 0 1rem 0;
     @include respond(tab-port) {
-        padding: 0 12%;
+        padding: 0 12% 0 16%;
         justify-content: center;
         flex-direction: row;
     }
@@ -36,15 +36,18 @@
     padding: 2rem;
     flex-direction: row;
     @include respond(tab-port) {
+        padding: 0 1.8rem 0 1rem;
+        min-width: 40vw;
     }
 }
 
 .middle_divider-col {
-    padding: 2rem;
-    margin-bottom: 1rem;
+    padding: 1.7rem;
     @include respond(tab-port) {
-        max-width: 35vw;
-
+        max-width: 40vw;
+    }
+    @include respond(big-desktop) {
+        max-width: 20vw;
     }
 }
 .middle_divider-phrase {
@@ -54,13 +57,18 @@
     line-height: 4rem;
     max-width: 70vw;
     @include respond(tab-port) {
-        line-height: 7rem;
+        line-height: 6rem;
         max-width: 35vw;
         font-size: 9rem;
         letter-spacing: -.6rem;
-
+    }
+    @include respond(big-desktop) {
+        line-height: 11rem;
+        max-width: 35vw;
+        font-size: 15rem;
+        letter-spacing: -.6rem;
     }
 }
 .middle-text {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
 }

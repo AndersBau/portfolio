@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
-// import { Link } from "react-router-dom";
 const Navbar = () => {
   const [menuIsOpen, setMenuIsOpen] =useState(false);
 
@@ -20,7 +19,7 @@ useEffect(()=> {
           <li className="nav_li"><Link to="/" className="nav_li--link" onClick={() => openMenu()}>Home</Link></li>
           <li className="nav_li"><Link to="/about" className="nav_li--link" onClick={() => openMenu()}>About</Link></li>
           <li className="nav_li"><Link to="/#ShortCutProjects" className="nav_li--link" onClick={() => openMenu()}>Projects</Link></li>
-          <li className="nav_li"><Link to="/contact" className="nav_li--link" onClick={() => openMenu()}>Contact</Link>    </li>
+          <li className="nav_li"><a href="mailto:andersonBbautista@gmail.com"  className="nav_li--link" onClick={() => openMenu()}>Contact</a>    </li>
         </ul>
 
         <div className="nav_burguer" onClick={() => openMenu()}>

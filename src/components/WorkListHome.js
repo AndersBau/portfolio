@@ -13,7 +13,7 @@ const WorkListHome = () => {
             <a href="https://the-super-store.herokuapp.com/home" target="_blank" rel="noreferrer">View Project > </a>
           </p>
         </div>
-        <div className="item_split-image bgItem-4">
+        <div className="item_split-image bgItem-1">
         </div>
       </div>
 
@@ -23,10 +23,10 @@ const WorkListHome = () => {
           <p>Multiservice Agengy</p>
           <p>Web Design & Development</p>
           <p className="view-project">
-            <a href="/projects/ushomeservices">View Project > </a>
+            <a href="https://geek-hunt.web.app/landing" target="_blank" rel="noreferrer">View Project > </a>
           </p>
         </div>
-        <div className="item_split-image bgItem-3">
+        <div className="item_split-image bgItem-2">
         </div>
       </div>
 
@@ -36,7 +36,7 @@ const WorkListHome = () => {
           <p>Multiservice Agengy</p>
           <p>Web Design & Development</p>
           <p className="view-project">
-            <a href="/projects/ushomeservices">View Project > </a>
+            <a href="https://ushomeservices.net/index.html" target="_blank" rel="noreferrer">View Project > </a>
           </p>
         </div>
         <div className="item_split-image bgItem-3">
@@ -49,7 +49,7 @@ const WorkListHome = () => {
           <p>Multiservice Agengy</p>
           <p>Web Design & Development</p>
           <p className="view-project">
-            <a href="/projects/ushomeservices">View Project > </a>
+            <a href="https://megafruver.org/" target="_blank" rel="noreferrer">View Project > </a>
           </p>
         </div>
         <div className="item_split-image bgItem-4">

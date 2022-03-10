@@ -147,6 +147,7 @@
 }
 .view-project a:hover {
     opacity: .9;
+    cursor: pointer;
 }
 .item_split-image {
     display: flex;
@@ -174,17 +175,17 @@
 }
 
 .bgItem-2 {
-    background-image: url(../../../public/img/things-made-2.jpg);
+    background-image: url(../../../public/img/geek_hunt.png);
     @include respond(tab-port) {
     }
 }
 .bgItem-3 {
-    background-image: url(../../../public/img/project-ushome-images/final-1.png);
+    background-image: url(../../../public/img/us_home.png);
     @include respond(tab-port) {
     }
 }
 .bgItem-4 {
-    background-image: url(../../../public/img/project-megafruver-images/final-1.png);
+    background-image: url(../../../public/img/megafruver.png);
     @include respond(tab-port) {
     }
 }

@@ -47,6 +47,9 @@ const WorkListHome = () => {
           <h4>Technologies</h4>
           <p>HTML, CSS, JavaScript.</p>
           <p className="view-project">
+            <a href="https://github.com/AndersBau/megafruver" target="_blank" rel="noreferrer">view code on github > </a>
+          </p>
+          <p className="view-project">
             <a href="https://megafruver.org/" target="_blank" rel="noreferrer">View Project > </a>
           </p>
         </div>

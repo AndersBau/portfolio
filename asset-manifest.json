@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f393af8.css",
+    "main.css": "/static/css/main.931de8ca.css",
     "main.js": "/static/js/main.a6a13ebd.js",
     "static/js/787.749b4a44.chunk.js": "/static/js/787.749b4a44.chunk.js",
     "static/media/megafruver.png": "/static/media/megafruver.e49196b004198c8d8cc4.png",
@@ -18,12 +18,12 @@
     "static/media/things-made-1.jpg": "/static/media/things-made-1.932cd19aab8c751d4241.jpg",
     "static/media/bg-work.png": "/static/media/bg-work.e08cc2fa128c4a3409ec.png",
     "index.html": "/index.html",
-    "main.5f393af8.css.map": "/static/css/main.5f393af8.css.map",
+    "main.931de8ca.css.map": "/static/css/main.931de8ca.css.map",
     "main.a6a13ebd.js.map": "/static/js/main.a6a13ebd.js.map",
     "787.749b4a44.chunk.js.map": "/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f393af8.css",
+    "static/css/main.931de8ca.css",
     "static/js/main.a6a13ebd.js"
   ]
 }

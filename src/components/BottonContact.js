@@ -11,7 +11,7 @@ const BottonContact = () => {
           and open to collaborate with other Devs.<br />If you think I can add value to your team
           feel free to
         </p>
-        <a className="bottonContact-link" href="mailto:andersonBbautista@gmail.com" >
+        <a className="bottonContact-link" href="mailto:andersonBbautista@gmail.com" rel="noreferrer" >
          contact me.
         </a>
       </div>

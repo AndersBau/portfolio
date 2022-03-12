@@ -43,7 +43,7 @@ const WorkListHome = () => {
         <div className="item_split-text">
         <h2 className="item-titles">Megafruver<br /> <span></span></h2>
         <p>Produce Store</p>
-          <p>Megafruver is a local supermarket located in Bucaramanga colombia.</p><br />
+          <p>Megafruver is a local supermarket located in Bucaramanga, Colombia.</p><br />
           <h4>Technologies</h4>
           <p>HTML, CSS, JavaScript.</p>
           <p className="view-project">

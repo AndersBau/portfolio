@@ -22,7 +22,7 @@ const About = () => {
           like React, Redux, Node.Js, Express and CSS.
           <br />
           <br />
-          I have experience working in small teams for different projects
+          I have experience working in small teams for various projects
           following Agile development methodologies.
           <br />
           I'm always growing and learning new and better ways of solving

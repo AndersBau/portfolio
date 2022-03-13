@@ -7,7 +7,7 @@ const WorkListHome = () => {
       <div className="item">
         <div className="item_split-text">
         <h2 className="item-titles">the Super<br /> <span>Store</span></h2>
-          <p>Shopping cart team project for Fullstack Academy.</p><br />
+          <p>E-commerce team project for Fullstack Academy.</p><br />
           <h4>Technologies</h4>
           <p>React, Redux, Express, Node.<br />Database management PostgreSQL with Sequelize as ORM.</p>
           <p className="view-project">

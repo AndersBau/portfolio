@@ -50,7 +50,7 @@ const WorkListHome = () => {
             <a href="https://github.com/AndersBau/megafruver" target="_blank" rel="noreferrer">view code on github > </a>
           </p>
           <p className="view-project">
-            <a href="https://megafruver.org/" target="_blank" rel="noreferrer">View Project > </a>
+            <a href="https://megafruver.org/" target="_blank" rel="noreferrer">View live > </a>
           </p>
         </div>
         <div className="item_split-image bgItem-4">
@@ -65,7 +65,7 @@ const WorkListHome = () => {
           <h4>Technologies</h4>
           <p>HTML, CSS, JavaScript.</p>
           <p className="view-project">
-            <a href="https://ushomeservices.net/index.html" target="_blank" rel="noreferrer">View Project > </a>
+            <a href="https://ushomeservices.net/index.html" target="_blank" rel="noreferrer">View live > </a>
           </p>
         </div>
         <div className="item_split-image bgItem-3">

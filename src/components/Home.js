@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/src/all";
 import BottonContact from "./BottonContact";
 import WorkListHome from "./WorkListHome";
 const Home = () => {
+  gsap.registerPlugin(ScrollToPlugin);
     const introBox = useRef();
 
     useEffect(() => {
@@ -21,6 +23,7 @@ const Home = () => {
       }
     );
     }, []);
+
   return (
     <div className="home-page-wrapper">
       <section id="intro">

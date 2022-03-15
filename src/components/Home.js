@@ -1,19 +1,23 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { gsap } from "gsap";
 import BottonContact from "./BottonContact";
 import WorkListHome from "./WorkListHome";
 const Home = () => {
-    const mainText = React.createRef();
-
+    const introBox = useRef();
+    const q = gsap.utils.selector(introBox);
+    const tl = useRef();
     useEffect(() => {
-        gsap.to(mainText.current, {color: "#8c0", duration: 2})
-    }, [mainText])
+        tl.current = gsap.timeline()
+        .to(q('h2'), {
+          x: 100
+        });
+    }, []);
   return (
     <div className="home-page-wrapper">
       <section id="intro">
         <div className="mainBox gradient">
-          <div className="mainBox-inside" ref={mainText}>
+          <div className="mainBox-inside" ref={introBox}>
             <h2 className="mainBox-intro" >
               Hi, thanks for comming to my site! <br />
               I’m <span>Anderson</span>

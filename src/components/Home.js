@@ -5,13 +5,21 @@ import BottonContact from "./BottonContact";
 import WorkListHome from "./WorkListHome";
 const Home = () => {
     const introBox = useRef();
-    const q = gsap.utils.selector(introBox);
-    const tl = useRef();
+
     useEffect(() => {
-        tl.current = gsap.timeline()
-        .to(q('h2'), {
-          x: 100
-        });
+      const element = introBox.current;
+    gsap.fromTo(
+      element.querySelector(".mainBox-intro"),
+      {
+        opacity: 0,
+        y: 25,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.2
+      }
+    );
     }, []);
   return (
     <div className="home-page-wrapper">

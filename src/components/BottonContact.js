@@ -11,7 +11,7 @@ const BottonContact = () => {
           feel free to
         </p>
         <a className="bottonContact-link" href="mailto:andersonBbautista@gmail.com" rel="noreferrer" >
-         contact me.
+         contact me
         </a>
       </div>
     </section>

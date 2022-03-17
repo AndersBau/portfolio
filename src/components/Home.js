@@ -59,7 +59,7 @@ const Home = () => {
           <div className="middle_divider-split">
             <div className="middle_divider-col">
                 <p className="middle-text">
-                A developer with experience working on teams following Agile development methodologies, utilizing modern web technologies.
+                A developer with experience working on teams following agile development methodologies, utilizing modern web technologies.
                 </p>
             </div>
             <div id="ShortCutProjects"></div>

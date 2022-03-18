@@ -33,7 +33,7 @@ const About = () => {
           about user centered experiences.
         </p>
         <br />
-        <h3>Tech stack</h3>
+        <h3>Tech Stack</h3>
         <p>Proficient:</p><br/>
         <p className="content-list">
           JavaScript, React, Redux, HTML, CSS, git, Node, Express, PostgreSQL

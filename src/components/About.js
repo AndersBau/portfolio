@@ -16,8 +16,7 @@ const About = () => {
       <section className="content">
         <p className="content-text">
           <span>Hi there,</span><br />
-          I’m a web developer based in New York. I went to graphic design school
-          and most recently I graduated from the Software Engineer program at FullStack Academy which has given
+          I’m a web developer based in New York. I come from a background of graphic design and most recently I graduated from the Software Engineer program at FullStack Academy which has given
           me the tools to create powerful seamless websites using modern technologies
           like React, Redux, NodeJS, Express and CSS.
           <br />

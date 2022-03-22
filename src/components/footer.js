@@ -7,7 +7,8 @@ const Footer = () => {
     <div className="footer-social">
         <a className="footer-links" href="https://www.linkedin.com/in/andersonbb/" target="_blank" rel="noreferrer">LinkedIn</a>
         <a className="footer-links" href="https://github.com/AndersBau" target="_blank" rel="noreferrer">github</a>
-        <a className="footer-links" href="https://dribbble.com/Andev11" target="_blank" rel="noreferrer">Dribbble</a>
+
+        {/* <a className="footer-links" href="https://dribbble.com/Andev11" target="_blank" rel="noreferrer">Dribbble</a> */}
     </div>
     <p>© 2022 Anderson Bautista</p>
 </footer>

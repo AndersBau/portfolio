@@ -18,7 +18,7 @@ const About = () => {
           <span>Hi there,</span><br />
           I’m a web developer based in New York. I come from a background of graphic design and most recently I graduated from the Software Engineer program at FullStack Academy which has given
           me the tools to create powerful seamless websites using modern technologies
-          like JavaScript, React, Redux, NodeJS, Express and CSS.
+          like JavaScript, React, CSS, NodeJS and Express.
           <br />
           <br />
           I have experience working in small teams for various projects

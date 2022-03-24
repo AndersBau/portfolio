@@ -24,7 +24,7 @@ const About = () => {
           I have experience working in small teams for various projects
           following agile development methodologies.
           <br />
-          I'm always growing and learning new and better ways of solving
+          I'm always learning new and better ways of solving
           problems. I'm intrigued by the thought process of creativity and have
           a passion for it.
           <br />

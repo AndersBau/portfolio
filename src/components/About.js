@@ -25,7 +25,7 @@ const About = () => {
           following agile development methodologies.
           <br />
           I'm always learning new and better ways of solving
-          problems. I'm intrigued by the thought process of  and have
+          problems. I'm intrigued by the thought process of creativity and have
           a passion for it.
           <br />
           I'm excited for the evolution of technology and passionate

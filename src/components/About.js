@@ -28,7 +28,7 @@ const About = () => {
           problems. I'm intrigued by the thought process of creativity and have
           a passion for it.
           <br />
-          I'm excited for the evolution of technology and passionate
+          I'm excited for the  of technology and passionate
           about user centered experiences.
         </p>
         <br />

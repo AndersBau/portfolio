@@ -29,7 +29,7 @@ const About = () => {
           a passion for it.
           <br />
           I'm excited for the evolution of technology and passionate
-          about user centered experiences.
+          about user centered .
         </p>
         <br />
         <h3>Tech Stack</h3>

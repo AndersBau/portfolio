@@ -24,7 +24,7 @@ const WorkListHome = () => {
 
       <div className="item">
         <div className="item_split-text">
-        <h2 className="item-titles">Gee<br /> <span>Hunt</span></h2>
+        <h2 className="item-titles">Geek<br /> <span>Hunt</span></h2>
           <p>Freelancer finder website</p>
           <p>Created as a group for Fullstack Academy Capstone project.</p><br />
           <h4>Technologies</h4>

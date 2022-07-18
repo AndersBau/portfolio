@@ -14,7 +14,7 @@ const WorkListHome = () => {
             <a href="https://github.com/AndersBau/graceshopperproject" target="_blank" rel="noreferrer">view code on github > </a>
           </p>
           <p className="view-project">
-            <a href="https://the-super-store.herokuapp.com/home" target="_blank" rel="noreferrer">view live > </a>
+            {/* <a href="https://the-super-store.herokuapp.com/home" target="_blank" rel="noreferrer">view live > </a> */}
           </p>
         </div>
         <div className="item_split-image bgItem-1">
@@ -32,7 +32,7 @@ const WorkListHome = () => {
             <a href="https://github.com/AndersBau/GeekHunt" target="_blank" rel="noreferrer">view code on github > </a>
           </p>
           <p className="view-project">
-            <a href="https://geek-hunt.web.app/landing" target="_blank" rel="noreferrer">view live > </a>
+            {/* <a href="https://geek-hunt.web.app/landing" target="_blank" rel="noreferrer">view live > </a> */}
           </p>
         </div>
         <div className="item_split-image bgItem-2">
